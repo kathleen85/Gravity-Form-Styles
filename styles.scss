@@ -1,0 +1,33 @@
+//Test
+/* VARIABLES */
+$light: #f8f8ff; //ghost white
+$dark: #08060E; //rich black
+$primary: #404E7C; //purple navy
+$secondary: #251F47; //space cadet
+$info: #71B48D; //shiny shamrock
+$success: #86CB92; //eton blue
+$warning: #F9D71C; //golden
+//$danger: #9D1A1A; //ruby red
+
+/* NEW STYLES */
+
+
+/* Gravity Forms Default Styles*/
+#form-style-2 form {
+	input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
+	textarea, 
+	select {padding: unset; margin-top: 12px;}
+	.gform-body .gsection {padding: 20px 0 0 0 !important;}
+}
+
+.gform_wrapper {
+	form {margin-bottom:0}
+	//div {@extend .input-group;}
+	hr {margin: 40px 0; opacity: .15;}
+	.gfield_required {padding-left:1px; color:$danger}
+	//input[type="email"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="number"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="week"], input[type="password"], input[type="url"], select, textarea {@extend .form-control;} 
+	//.button{@extend .btn; @extend .btn-primary}
+	.alert-danger, .gfield_error {
+		.gfield_label, input, select, textarea {color: $danger; background-color: unset; }
+	}
+}
